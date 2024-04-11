@@ -1,0 +1,294 @@
+@font-face {
+  font-family: honk;
+  src: url('../fonts/Honk/Honk-Regular-VariableFont_MORF\,SHLN.ttf');
+}
+
+body {
+  background-image: url( /games_memory/assets/img/memory/dragonball.jpg ) ; /* Cambia 'ruta/a/tu/imagen.jpg' por la ruta de tu imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+  font-family: honk;
+  font-size: large;
+  text-transform: uppercase !important;
+}
+
+.titleGames {
+  font-size: 7em;
+}
+
+input {
+  text-transform: uppercase !important;
+  background:#fffdfd !important;
+}
+
+select {
+  text-transform: uppercase !important;
+  background:#000000 !important;
+  cursor: pointer;
+}
+
+#btn_start {
+  background: rgb(34, 183, 20) !important; 
+  border: solid 4px rgb(0, 0, 0);
+  font-size: 5em;
+}
+
+#btn_start:hover {
+  background: rgb(48, 31, 31);
+  background: linear-gradient(0deg, rgba(0, 96, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  border-radius: 10px;
+  font-size: 6em;
+}
+nav.navbar {
+  background-color: rgb(0, 0, 0) !important; /* Cambia el color de fondo del nav a azul */
+  color: rgb(255, 255, 255); /* Cambia el color del texto del nav a blanco */
+}
+.card {
+  background-color: rgba(0, 0, 0,0);  /* Cambia el valor 0.5 para ajustar la transparencia */
+  border: none;
+}
+.contCard {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  
+  @font-face {
+    font-family: honk;
+    src: url('../fonts/Honk/Honk-Regular-VariableFont_MORF\,SHLN.ttf');
+  }
+  
+  body {
+    background: rgb(0, 0, 0);
+    font-family: honk;
+    font-size: large;
+    text-transform: uppercase !important;
+  }
+  
+  .titleGames {
+    font-size: 5m;
+  }
+  
+  input {
+    text-transform: uppercase !important;
+    background:#000000 !important;
+  }
+  
+  select {
+    text-transform: uppercase !important;
+    background:#000000 !important;
+    cursor: pointer;
+  }
+  
+  #btn_start {
+    background: #e01111;
+    border: solid 2px green;
+    font-size: 2em;
+  }
+  
+  #btn_start:hover {
+    background: rgb(0, 96, 0);
+    background: linear-gradient(0deg, rgba(0, 96, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 10px;
+    font-size: 1.9em;
+  }
+  
+  .contCard {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    @font-face {
+      font-family: honk;
+      src: url('../fonts/Honk/Honk-Regular-VariableFont_MORF\,SHLN.ttf');
+    }
+    
+    body {
+      background: rgb(0, 0, 0);
+      font-family: honk;
+      font-size: large;
+      text-transform: uppercase !important;
+    }
+    
+    .titleGames {
+      font-size: 5em;
+    }
+    
+    input {
+      text-transform: uppercase !important;
+      background:#000 !important;
+    }
+    
+    select {
+      text-transform: uppercase !important;
+      background:#000 !important;
+      cursor: pointer;
+    }
+    
+    #btn_start {
+      background: #000;
+      border: solid 2px green;
+      font-size: 2em;
+    }
+    
+    #btn_start:hover {
+      background: rgb(0, 96, 0);
+      background: linear-gradient(0deg, rgba(0, 96, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+      border-radius: 10px;
+      font-size: 1.9em;
+    }
+    
+    .contCard {
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+     
+    }
+    
+    div.car {
+    background-color: black;
+    }
+    .contCard img {
+      width: 100%;
+      height: auto;
+      object-fit: contain; /* Ajusta la imagen para que se ajuste dentro del contenedor */
+    }
+    
+    /* Estilos específicos para las imágenes reveladas */
+    .contCard.flipped img {
+      max-height: 100%; /* Ajusta el tamaño máximo de la imagen revelada */
+    }
+    
+    /* Estilos específicos para la dificultad fácil */
+    @media screen and (max-width: 576px) {
+      .contCard {
+        max-width: none; /* Elimina el ancho máximo para la dificultad fácil */
+        flex-basis: calc(50% - 10px); /* Divide el contenedor en 2 columnas para la dificultad fácil y resta el espacio entre las cartas */
+        margin: 5px; /* Añade un pequeño margen entre las cartas */
+        flex-grow: 1; /* Permite que las cartas ocupen todo el espacio disponible */
+      }
+    
+      .playerInfo {
+        max-width: calc(50% - 10px); /* Define el mismo ancho para el contenedor de los nombres de los jugadores */
+        margin: 5px; /* Añade un pequeño margen entre los contenedores */
+      }
+    }
+    
+    /* Estilos específicos para la dificultad media */
+    @media screen and (min-width: 577px) and (max-width: 991px) {
+      .contCard {
+        max-width: none; /* Elimina el ancho máximo para la dificultad media */
+        flex-basis: calc(100% / 4); /* Divide el contenedor en 4 columnas para la dificultad media */
+      }
+    }
+    
+    /* Estilos específicos para la dificultad difícil */
+    @media screen and (min-width: 992px) {
+      .contCard {
+        max-width: none; /* Elimina el ancho máximo para la dificultad difícil */
+        flex-basis: calc(100% / 6); /* Divide el contenedor en 6 columnas para la dificultad difícil */
+      }
+    }
+    
+  }
+  
+  .contCard img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ajusta la imagen para que se ajuste dentro del contenedor */
+  }
+  
+  /* Estilos específicos para las imágenes reveladas */
+  .contCard.flipped img {
+    max-height: 100%; /* Ajusta el tamaño máximo de la imagen revelada */
+  }
+  
+  /* Estilos específicos para la dificultad fácil */
+  @media screen and (max-width: 576px) {
+    .contCard {
+      max-width: none; /* Elimina el ancho máximo para la dificultad fácil */
+      flex-basis: calc(50% - 10px); /* Divide el contenedor en 2 columnas para la dificultad fácil y resta el espacio entre las cartas */
+      margin: 5px; /* Añade un pequeño margen entre las cartas */
+      flex-grow: 1; /* Permite que las cartas ocupen todo el espacio disponible */
+    }
+  
+    .playerInfo {
+      max-width: calc(50% - 10px); /* Define el mismo ancho para el contenedor de los nombres de los jugadores */
+      margin: 5px; /* Añade un pequeño margen entre los contenedores */
+    }
+  }
+  
+  /* Estilos específicos para la dificultad media */
+  @media screen and (min-width: 577px) and (max-width: 991px) {
+    .contCard {
+      max-width: none; /* Elimina el ancho máximo para la dificultad media */
+      flex-basis: calc(100% / 4); /* Divide el contenedor en 4 columnas para la dificultad media */
+    }
+  }
+  
+  /* Estilos específicos para la dificultad difícil */
+  @media screen and (min-width: 992px) {
+    .contCard {
+      max-width: none; /* Elimina el ancho máximo para la dificultad difícil */
+      flex-basis: calc(100% / 6); /* Divide el contenedor en 6 columnas para la dificultad difícil */
+    }
+  }
+  
+}
+
+.contCard img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ajusta la imagen para que se ajuste dentro del contenedor */
+}
+
+/* Estilos específicos para las imágenes reveladas */
+.contCard.flipped img {
+  max-height: 100%; /* Ajusta el tamaño máximo de la imagen revelada */
+}
+
+/* Estilos específicos para la dificultad fácil */
+@media screen and (max-width: 576px) {
+  .contCard {
+    max-width: none; /* Elimina el ancho máximo para la dificultad fácil */
+    flex-basis: calc(50% - 10px); /* Divide el contenedor en 2 columnas para la dificultad fácil y resta el espacio entre las cartas */
+    margin: 5px; /* Añade un pequeño margen entre las cartas */
+    flex-grow: 1; /* Permite que las cartas ocupen todo el espacio disponible */
+  }
+
+  .playerInfo {
+    max-width: calc(50% - 10px); /* Define el mismo ancho para el contenedor de los nombres de los jugadores */
+    margin: 5px; /* Añade un pequeño margen entre los contenedores */
+  }
+}
+
+/* Estilos específicos para la dificultad media */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .contCard {
+    max-width: none; /* Elimina el ancho máximo para la dificultad media */
+    flex-basis: calc(100% / 4); /* Divide el contenedor en 4 columnas para la dificultad media */
+  }
+}
+
+/* Estilos específicos para la dificultad difícil */
+@media screen and (min-width: 992px) {
+  .contCard {
+    max-width: none; /* Elimina el ancho máximo para la dificultad difícil */
+    flex-basis: calc(100% / 6); /* Divide el contenedor en 6 columnas para la dificultad difícil */
+  }
+}
