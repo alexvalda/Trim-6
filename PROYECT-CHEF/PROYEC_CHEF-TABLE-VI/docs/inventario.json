@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "producto": "Arroz",
+    "cantidad": "50 libras",
+    "categoria": "Granos",
+    "proveedor": "Frubana"
+  },
+  {
+    "id": 2,
+    "producto": "Frijoles",
+    "cantidad": "30 libras",
+    "categoria": "Granos",
+    "proveedor": "Proveedor B"
+  },
+  {
+    "id": 3,
+    "producto": "Carne de res",
+    "cantidad": "20 libras",
+    "categoria": "Cárnicos",
+    "proveedor": "Proveedor C"
+  },
+  {
+    "id": 4,
+    "producto": "Papas",
+    "cantidad": "40 libras",
+    "categoria": "Vegetales",
+    "proveedor": "Proveedor D"
+  },
+  {
+    "id": 5,
+    "producto": "Cebollas",
+    "cantidad": "25 libras",
+    "categoria": "Vegetales",
+    "proveedor": "Proveedor E"
+  },
+  {
+    "id": 6,
+    "producto": "Tomates",
+    "cantidad": "30 libras",
+    "categoria": "Vegetales",
+    "proveedor": "Proveedor F"
+  },
+  {
+    "id": 7,
+    "producto": "Pollo",
+    "cantidad": "40 libras",
+    "categoria": "Cárnicos",
+    "proveedor": "Proveedor G"
+  },
+  {
+    "id": 8,
+    "producto": "Leche",
+    "cantidad": "20 libras",
+    "categoria": "Lácteos",
+    "proveedor": "Proveedor H"
+  },
+  {
+    "id": 9,
+    "producto": "Huevos",
+    "cantidad": "15 libras",
+    "categoria": "Lácteos",
+    "proveedor": "Proveedor I"
+  },
+  {
+    "id": 10,
+    "producto": "Queso",
+    "cantidad": "15 libras",
+    "categoria": "Lácteos",
+    "proveedor": "Proveedor J"
+  },
+  {
+    "id": 11,
+    "producto": "Aceite de cocina",
+    "cantidad": "10 libras",
+    "categoria": "Condimentos",
+    "proveedor": "Proveedor K"
+  },
+  {
+    "id": 12,
+    "producto": "Sal",
+    "cantidad": "10 libras",
+    "categoria": "Condimentos",
+    "proveedor": "Proveedor L"
+  },
+  {
+    "id": 13,
+    "producto": "Azúcar",
+    "cantidad": "20 libras",
+    "categoria": "Condimentos",
+    "proveedor": "Proveedor M"
+  },
+  {
+    "id": 14,
+    "producto": "Harina de trigo",
+    "cantidad": "30 libras",
+    "categoria": "Harinas",
+    "proveedor": "Proveedor N"
+  },
+  {
+    "id": 15,
+    "producto": "Mantequilla",
+    "cantidad": "10 libras",
+    "categoria": "Lácteos",
+    "proveedor": "Proveedor O"
+  }
+]

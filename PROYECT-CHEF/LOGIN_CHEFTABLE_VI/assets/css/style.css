@@ -1,0 +1,157 @@
+/*margenes por defecto del navegador*/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-image: url("../img/img/pexels-elle-hughes-2696064.jpg"); /* Establecer la imagen de fondo */
+  background-size: cover; /* Ajustar el tamaño de la imagen para cubrir todo el cuerpo */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  /* Puedes agregar más propiedades como background-position si deseas ajustar la posición de la imagen */
+}
+.container {
+  display: flex; /* Convierte el contenedor en un contenedor flexible */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 100vh; /* Establece la altura del contenedor al 100% de la altura de la ventana */
+}
+
+.container-form {
+  background: #7bb92ace;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px 1px rgb(128, 128, 128);
+  display: flex;
+  flex-direction: column; /* Cambiar la dirección del diseño a columna */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  border: 2px solid #23233b8a;
+  overflow: hidden;
+}
+
+.container-form img {
+  margin-top: 10px; /* Agregar margen inferior a la imagen */
+  margin-bottom: 10px; /* Agregar margen inferior a la imagen */
+}
+
+h3.text-center {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 1rem; /* Establece un margen superior de 1 rem */
+  color: #23233b; /* Cambia el color del texto */
+  font-size: 1.5rem; /* Establece el tamaño de fuente */
+  font-weight: bold; /* Establece el peso de la fuente a negrita */
+}
+
+/* Estilo para el contenedor div */
+.form-floating {
+  margin-bottom: 20px; /* Espacio entre cada contenedor */
+}
+
+/* Estilo para el input */
+.form-control {
+  width: 100%; /* Ancho completo dentro del contenedor */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde del input */
+  border-radius: 30px; /* Borde redondeado */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo para la label */
+.form-floating label {
+  display: block; /* Mostrar la label como bloque para que ocupe todo el ancho disponible */
+  margin-bottom: 5px; /* Espacio entre la label y el input */
+  font-size: 14px; /* Tamaño de fuente */
+  color: #666; /* Color del texto */
+}
+
+/* Estilo para cambiar el color del ícono al pasar el mouse */
+#btn-password img {
+  transition: filter 0.3s ease; /* Transición suave */
+}
+
+#btn-password {
+  background-color: #23233b; /* Cambiar el color del fondo del botón */
+  border-radius: 0px 30px 30px 0px;
+}
+
+#btn-password:hover {
+  background-color: rgb(
+    122,
+    122,
+    122
+  ); /* Color de fondo del botón al pasar el mouse sobre él */
+}
+
+#btn-passwordRP {
+  background-color: #23233b; /* Cambiar el color del fondo del botón */
+  border-radius: 0px 30px 30px 0px;
+}
+
+#btn-passwordRP:hover {
+  background-color: rgb(
+    122,
+    122,
+    122
+  ); /* Color de fondo del botón al pasar el mouse sobre él */
+}
+
+/* Estilo para el botón SEND */
+.btn-primary {
+  background-color: #23233b;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background-color: #a7a7a7;
+}
+
+/* Estilo para el enlace SIGN IN */
+.btn-secondary {
+  background-color: #23233b;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+.btn-secondary:hover {
+  background-color: #1e9613;
+}
+.btn-tertiary {
+  font-family: "Arial", sans-serif;
+  font-size: 16px; /* Establece el tamaño de fuente en 16 píxeles */
+  font-weight: bold; /* Establece el peso de la fuente en negrita */
+  color: #23233b; /* Cambia el color del texto a un tono de gris oscuro */
+  /* Otros estilos adicionales */
+}
+
+/* Estilo para el enlace "Recover your password" al hacer hover */
+.btn-tertiary:hover {
+  color: rgb(4, 0, 255); /* Cambiar el color del texto al hacer hover */
+}
+.btn-info {
+  background-color: #23233b;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+.btn-info:hover {
+  background-color: #1e9613;
+}

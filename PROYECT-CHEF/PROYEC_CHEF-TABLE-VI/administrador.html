@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title>Administrador</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/admin.css" />
+</head>
+
+<body>
+  <input type="checkbox" id="nav-toggle" />
+  <div class="sidebar">
+    <div class="sidebar-brand">
+      <h2>
+        <span class=""></span>
+        <span><img src="./img/logos/LOGO CHEF TABLE2-02.png" alt="" width="180px" height="90px" /></span>
+      </h2>
+    </div>
+    <!--Secciones-del-tablero-->
+    <div class="sidebar-menu">
+      <ul>
+        <!--Inicio-->
+        <li>
+          <a href="admin.html
+            "><i class="fa-solid fa-house"></i> <span>Inicio</span></a>
+        </li>
+        <!--Administrador-->
+        <li>
+          <a href="administrador.html" class="active"><i class="fa-regular fa-user"></i> <span>Administrador</span></a>
+        </li>
+        <!--Crear usuario-->
+        <li>
+          <a href="crear_usuario.html"><i class="fa-solid fa-users"></i>
+            <span>Crear Usuario</span></a>
+        </li>
+        <!--Inventario-->
+        <li>
+          <a href="inventario.html"><i class="fa-solid fa-clipboard"></i> <span>Inventario</span></a>
+        </li>
+       
+     
+        <!--comanda-->
+        <li>
+          <a href="comanda.html"><i class="fa-solid fa-file"></i></span>
+            <span> Comanda</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h2>
+        <label for="nav-toggle">
+          <i class="fa-regular fa-user"></i>
+          Administrador
+      </h2>
+
+      <div class="search-wrapper">
+        <span class="las la-search"><i class="fa-solid fa-magnifying-glass" style="color: #141b2f;"></i></span>
+        <input type="search" placeholder="Buscar aquí" />
+      </div>
+      <div class="user-wrapper">
+        <img src="img/pexels-cottonbro-studio-4057693.jpg" width="40px" height="55px" alt="" />
+        <div>
+          <h4>Administrador</h4>
+          <small>Super Admin</small>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="cards">
+        <div class="card-single">
+          <div>
+            <h1>0</h1>
+            <span>Usuarios Eliminados</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-users-between-lines" style="color: #141b2f;"></i>
+          </div>
+        </div>
+
+
+
+        <div class="card-single">
+          <div>
+            <h1>3</h1>
+            <span>USUARIOS CREADOS</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-users-between-lines"></i>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h1>-</h1>
+            <span>ELIMINAR PRODUCTOS</span>
+          </div>
+          <div>
+
+          </div>
+        </div>
+
+        <div class="card-single">
+          <div>
+            <h1>+</h1>
+            <span>CREAR PRODUCTOS</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-upload"></i>
+          </div>
+        </div>
+
+
+
+        <div class="card-single">
+          <div>
+            <h1>%</h1>
+            <span>GESTIÓN DE INVENTARIOS</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-simple" style="color: #ffffff;"></i>
+          </div>
+        </div>
+      </div>
+      <!--Tabla-->
+
+    </main>
+  </div>
+</body>
+
+</html>

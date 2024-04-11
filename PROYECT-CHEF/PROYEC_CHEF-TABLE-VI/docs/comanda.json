@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "menu": "Corriente",
+    "precio": "$ 12.000",
+    "fecha": "08/04/2024"
+  },
+  {
+    "id": 1,
+    "menu": "ejecutivo",
+    "precio": "$ 18.000",
+    "fecha": "08/04/2024"
+  },
+  {
+    "id": 1,
+    "menu": "Especial",
+    "precio": "$ 30.000",
+    "fecha": "08/04/2024"
+  }
+]

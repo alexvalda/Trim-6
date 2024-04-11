@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Angel Medina",
+    "email": "lordart03@gmail.com",
+    "tipo": "Administrador",
+    "estado": "Activo"
+  },
+  {
+    "id": 1,
+    "name": "Julian Montenegro",
+    "email": "julianmontenegro99@gmil.com",
+    "tipo": "Chef",
+    "estado": "Activo"
+  },
+  {
+    "id": 1,
+    "name": "Eduardo Gil",
+    "email": "lordart03@gmail.com",
+    "tipo": "Mesero",
+    "estado": "Activo"
+  }
+]

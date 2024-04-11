@@ -1,0 +1,549 @@
+:root {
+  --main-c: #7bb92af3;
+  --black-c: #ffffff;
+}
+
+/** Estilos Generales **/
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+p {
+  font-size: 1.1rem;
+}
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+h5 {
+  font-size: 1.4rem;
+}
+h6 {
+  font-size: 1.2rem;
+}
+
+/* Enlaces & Botones*/
+
+.cta-main {
+  background-color: #7bb92af3;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: bold;
+  border-radius: 4px;
+}
+/* Header CHEF TABLE */
+
+header.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #23233b;
+  z-index: 9999;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: transparent;
+  z-index: 999;
+}
+.wrap-logo-header {
+  display: flex;
+  align-items: center;
+  flex-basis: 15%;
+}
+.logo-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* menu header */
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.nav-wrap-header {
+  display: flex;
+  flex-basis: 50%;
+}
+.wrap-title-section {
+  scroll-margin-top: 8ex;
+}
+.main-section {
+  scroll-margin-top: 8ex;
+}
+ul.main-menu {
+  display: flex;
+  width: 100%;
+  z-index: 99;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+/* lista ul barra de navegación "contacto"*/
+ul.main-menu #nav-main-contact {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #7bb92af3;
+  color: #fff;
+}
+li.menu-item {
+  margin: 0.75rem;
+  display: flex;
+  border-radius: 6px;
+}
+li.menu-item a {
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+}
+/* lista ul color fuentes barra de navegación "hover"*/
+li.menu-item a:hover {
+  color: #7bb92af3;
+}
+
+i.toggle-menu img {
+  width: 27px;
+  z-index: 99;
+}
+
+i.toggle-menu {
+  display: none;
+  background-color: #fff;
+  border: none;
+  z-index: 9999;
+}
+
+input#check {
+  display: none;
+}
+
+@media (min-width: 880px) {
+  .header-wrap {
+    padding: 0.5rem 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  a.logo-header {
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  header.main-header {
+    margin-bottom: 4rem;
+  }
+  .header-wrap {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+    top: 0;
+    z-index: 9999;
+    height: 60px;
+  }
+  .wrap-logo-header {
+    position: fixed;
+    z-index: 999;
+    top: 3%;
+    left: 3%;
+  }
+  .logo-header,
+  li.menu-item a {
+    color: #222;
+  }
+
+  i.toggle-menu {
+    display: flex;
+  }
+  ul.main-menu,
+  #nav-main-contact {
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  ul.main-menu {
+    position: fixed;
+    background-color: #fff;
+  }
+  label.checkbtn {
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  #check:checked ~ ul {
+    display: flex;
+    z-index: 9;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    top: 0;
+    font-size: 2rem;
+  }
+}
+/* Hero Section HomePage */
+.wrap-header-hero {
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0.75), rgb(0 0 0 / 0.5)),
+    url(../img/img/pexels-rene-asmussen-2544829.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-home-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap-hero-home-page {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 50%;
+}
+
+.cta-main p {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .wrap-hero-home-page {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+/* Tarjetas de "NOSOTROS " */
+.section {
+  max-width: 1200px;
+  margin: 8rem auto;
+  padding: 1rem;
+}
+
+.column-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+/* Tarjetas de "NOSOTROS " container imagen */
+.tarjeta-rest {
+  background-repeat: no-repeat;
+  height: 400px;
+  border-radius: 8px;
+  padding: 1rem 0.5rem;
+  display: flex;
+  box-shadow: 0px 0px 12px #646464;
+  align-items: end;
+}
+/* Tarjetas de "NOSOTROS "recuadros difuminados */
+.wrap-text_tarjeta-rest {
+  color: #7bb92af3;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: linear-gradient(to top, rgb(0 0 0 / 0.5), rgba(9, 42, 85, 0.5));
+}
+/* Tarjetas "NOSOTROS " texto contenido de cada una de las especialidades */
+.wrap-text_tarjeta-rest p {
+  color: #f2f2f2;
+}
+.wrap-title-section {
+  scroll-margin-top: 8ex;
+}
+
+@media (max-width: 1200px) {
+  .column-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 880px) {
+  .column-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .column-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*Articulos de Blog */
+article.card {
+  max-width: 350px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  margin: 1.5rem;
+  box-shadow: 0px 0px 12px #646464;
+}
+.header-card {
+  display: flex;
+}
+.header-card img {
+  border-radius: 8px 8px 0 0;
+  max-height: 300px;
+  height: 320px;
+  width: 100%;
+}
+
+.card footer {
+  display: flex;
+  flex-flow: column;
+  padding: 0 1rem;
+}
+
+.perfil-card {
+  display: flex;
+  align-items: center;
+}
+
+.img-perfil-card {
+  display: flex;
+}
+
+.img-perfil-card img {
+  width: 40px;
+  border-radius: 10%;
+  margin: 1rem 1rem 1rem 0;
+}
+.text-perfil-card {
+  display: flex;
+  flex-flow: column;
+}
+.text-perfil-card span:nth-child(2) {
+  color: #cfcfcf;
+}
+.card-wrap {
+  display: flex;
+  flex-flow: wrap;
+}
+
+@media (max-width: 768px) {
+  .card-wrap {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 4rem;
+  }
+  .header-wrap {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+    top: 0;
+    z-index: 9999;
+    height: 60px;
+  }
+  .wrap-logo-header {
+    position: fixed;
+    z-index: 999;
+    top: 3%;
+    left: 3%;
+  }
+  i.toggle-menu {
+    display: flex;
+  }
+  ul.main-menu,
+  #nav-main-contact {
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  ul.main-menu {
+    position: fixed;
+    background-color: #fff;
+  }
+  label.checkbtn {
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    z-index: 9999;
+  }
+  #check:checked ~ ul {
+    display: flex;
+    z-index: 9;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    top: 0;
+    font-size: 2rem;
+  }
+}
+
+/* NUESTROS SOFTWARE */
+.hero-page {
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
+    url(../img/img/concepto-collage-control-calidad-estandar.jpg) center;
+  background-size: cover;
+  height: 200px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap-hero-page {
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  text-align: center;
+}
+.section {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+/* EL APLICATIVO CHEF TABLE */
+.wrap-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+}
+/*Disponibilidad las 24 Hrs*/
+.column-half {
+  line-height: 2;
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-flow: column;
+}
+.formulario input,
+.formulario textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem 02rem;
+}
+.formulario button {
+  width: fit-content;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  background-color: #7bb92af3;
+  color: #fff;
+  font-size: 1.1rem;
+}
+@media (max-width: 640px) {
+  .wrap-two-column {
+    grid-template-columns: 1fr;
+  }
+}
+/* Formulario justificar texto reserva una mesa */
+.text-justify {
+  text-align: justify;
+}
+/* Footer de la página */
+
+footer {
+  background-color: #23233b;
+  color: var(--black-c);
+}
+
+footer ul {
+  padding: 0;
+}
+
+.wrap-footer {
+  display: grid;
+  grid-template-columns: 30% 15% 15% 20%;
+  column-gap: 5%;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+element-footer h5 {
+  margin: 1rem 0;
+}
+
+.text-element-footer {
+  line-height: 2;
+}
+
+.text-element-footer li a {
+  color: #7bb92af3;
+}
+
+.rrss-element-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rrss-element-footer img {
+  width: 45px;
+}
+.rrss-element-footer li {
+  margin-right: 1rem;
+}
+
+.footer-creds {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #576171;
+  font-size: 0.9rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.legal-creds ul {
+  display: flex;
+}
+
+.legal-creds ul li {
+  padding-right: 1rem;
+}
+
+.legal-creds ul li a {
+  color: #576171;
+}
+/* RESPONSIVE MEDIA QUERIT */
+@media (max-width: 768px) {
+  .wrap-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap-footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 320px) {
+  .footer-creds {
+    flex-flow: column;
+  }
+}

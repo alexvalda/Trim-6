@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title>Comanda</title>
+  <link type="image/x-icon" href="./assets/img/logos/logo.png" rel="icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/admin.css" />
+</head>
+
+<body>
+  <input type="checkbox" id="nav-toggle" />
+  <div class="sidebar">
+    <div class="sidebar-brand">
+      <h2>
+        <span class=""></span>
+        <span><img src="./img/logos/LOGO CHEF TABLE2-02.png" alt="" width="180px" height="90px" /></span>
+      </h2>
+    </div>
+    <!--Secciones-del-tablero-->
+    <div class="sidebar-menu">
+      <ul>
+        <!--Inicio-->
+        <li>
+          <a href="admin.html"><i class="fa-solid fa-house"></i> <span>Inicio</span></a>
+        </li>
+        <!--Administrador-->
+        <li>
+          <a href="administrador.html"><i class="fa-regular fa-user"></i> <span>Administrador</span></a>
+        </li>
+        <!--Crear usuario-->
+        <li>
+          <a href="crear_usuario.html"><i class="fa-solid fa-users"></i>
+            <span>Crear Usuario</span></a>
+        </li>
+        <!--Inventario-->
+        <li>
+          <a href="inventario.html"><i class="fa-solid fa-clipboard"></i> <span>Inventario</span></a>
+        </li>
+
+
+
+        <!--comanda-->
+        <li>
+          <a href="comanda.html" class="active"><i class="fa-solid fa-file"></i></span>
+            <span> Comanda</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h2>
+        <label for="nav-toggle">
+          <span class="las la-bars"><i class="fa-solid fa-file"></i></span>
+        </label>
+        Comanda
+      </h2>
+
+      <div class="search-wrapper">
+        <span class="las la-search"><i class="fa-solid fa-magnifying-glass" style="color: #141b2f;"></i></span>
+        <input type="search" placeholder="Buscar aquí" />
+      </div>
+      <div class="user-wrapper">
+        <img src="img/pexels-cottonbro-studio-4057693.jpg" width="40px" height="55px" alt="" />
+        <div>
+          <h4>Administrador</h4>
+          <small>Super Admin</small>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="cards">
+
+
+        <div class="card-single">
+          <div>
+            <h1>50</h1>
+            <span>Comandas registradas</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-upload" style="color: #141b2f;"></i>
+          </div>
+        </div>
+
+        <div class="card-single">
+          <div>
+            <h1>15</h1>
+            <span>Producto Vendidos</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-arrow-down" style="color: #141b2f;"></i>
+          </div>
+        </div>
+
+        <div class="card-single">
+          <div>
+            <h1>0</h1>
+            <span>Cierres de Día</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-bars-progress" style="color: #141b2f;"></i>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h1>0</h1>
+            <span>Cierres de mes</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-bars-progress" style="color: #ffffff;"></i>
+          </div>
+        </div>
+
+      </div>
+      <!--Tabla-->
+      <div class="recent-grid">
+        <div class="projects">
+          <div class="card">
+            <div class="card-header">
+              <h3>COMANDAS REGISTRADAS</h3>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+
+                <!--btn add-->
+                <div class="d-flex">
+                  <button type="button" onclick="createComanda()" class="btn btn-success">Crear Comanda<img
+                      class="img img-fluid">
+                  </button>
+
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+              <!--End Container nav-->
+
+              <!--Container -->
+              <div class="container">
+                <!--Container table-->
+                <div class="table-responsive tableApp">
+                  <table class="table table-dark table-striped table-hover">
+                    <thead>
+                      <tr class="text-center">
+                        <th>#</th>
+                        <th>MENU</th>
+                        <th>PRECIO</th>
+                        <th>FECHA</th>
+                        <th>ACTIONS</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                    <tfoot>
+                      <tr class="text-center">
+                        <th>#</th>
+                        <th>MENU</th>
+                        <th>PRECIO</th>
+                        <th>FECHA</th>
+                        <th>ACTIONS</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+
+
+              <!-- Modal -->
+              <div class="modal fade" id="modalApp" tabindex="-1" aria-labelledby="modalAppLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalAppLabel">COMANDA</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Formulario -->
+                      <form action id="formUser">
+                        <input type="hidden" class="form-control" id="id" value>
+                        <div class="form-floating mb-3">
+                          <p>MENU</p>
+                          <label for="producto" class="form-label"></label>
+                          <input type="text" class="form-control" id="menu" placeholder="Menu" required>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <p>PRECIO</p>
+                          <label for="cantidad" class="form-label"></label>
+                          <input type="text" class="form-control" id="precio" placeholder="Precio" required>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <p>FECHA</p>
+                          <label for="categoria" class="form-label"></label>
+                          <input type="date" class="form-control" id="fecha" placeholder="Fecha" required>
+                        </div>
+
+                      </form>
+                      <!-- Fin del formulario -->
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" id="btnSubmit" form="formUser" class="btn btn-primary">Save
+                          changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+    </main>
+  </div>
+
+  </main>
+  </div>
+  <!--Script bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!--Script RFC4122-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.7/uuid.min.js"></script>
+  <!--Script my script-->
+  <script src="./js/FirebaseComanda.js"></script>
+  <!--Script my script-->
+  <script src="./js/mainC.js"></script>
+</body>
+
+</html>
