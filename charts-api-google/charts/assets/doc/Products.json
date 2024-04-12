@@ -1,0 +1,107 @@
+[
+  {
+    "code": "001",
+    "name": "pescado",
+    "description": "producto carnico a base de pescado .",
+    "value": 2.5,
+    "type": "food"
+  },
+  {
+    "code": "002",
+    "name": "Huevos",
+    "description": "Una excelente fuente de proteínas para tus recetas.",
+    "value": 3.0,
+    "type": "food"
+  },
+  {
+    "code": "003",
+    "name": "Leche",
+    "description": "Nutritiva y deliciosa para tus desayunos y postres.",
+    "value": 2.0,
+    "type": "food"
+  },
+  {
+    "code": "004",
+    "name": "Pan",
+    "description": "Fresco y crujiente, perfecto para cualquier momento del día.",
+    "value": 1.5,
+    "type": "food"
+  },
+  {
+    "code": "005",
+    "name": "Pasta",
+    "description": "Ideal para preparar platos deliciosos y rápidos.",
+    "value": 1.0,
+    "type": "food"
+  },
+  {
+    "code": "006",
+    "name": "Aceite de Oliva",
+    "description": "Saludable y versátil para cocinar y aliñar tus comidas.",
+    "value": 5.0,
+    "type": "food"
+  },
+  {
+    "code": "007",
+    "name": "Cebolla",
+    "description": "Imprescindible para dar sabor a tus guisos y ensaladas.",
+    "value": 0.5,
+    "type": "food"
+  },
+  {
+    "code": "008",
+    "name": "Papel Higiénico",
+    "description": "Un artículo esencial para la higiene personal y del hogar.",
+    "value": 3.0,
+    "type": "home"
+  },
+  {
+    "code": "009",
+    "name": "Detergente",
+    "description": "Para mantener tu ropa limpia y fresca en cada lavado.",
+    "value": 4.0,
+    "type": "home"
+  },
+  {
+    "code": "010",
+    "name": "Jabón de Cocina",
+    "description": "Para mantener tus utensilios y vajilla limpios y libres de grasa.",
+    "value": 1.0,
+    "type": "home"
+  },
+  {
+    "code": "011",
+    "name": "Café",
+    "description": "Para disfrutar de una taza aromática y deliciosa cada mañana.",
+    "value": 6.0,
+    "type": "food"
+  },
+  {
+    "code": "012",
+    "name": "Azúcar",
+    "description": "El complemento perfecto para endulzar tus bebidas y postres.",
+    "value": 1.5,
+    "type": "food"
+  },
+  {
+    "code": "013",
+    "name": "Detergente para Platos",
+    "description": "Para dejar tus platos y utensilios impecables después de cada comida.",
+    "value": 2.5,
+    "type": "home"
+  },
+  {
+    "code": "014",
+    "name": "Papel Aluminio",
+    "description": "Útil para conservar tus alimentos frescos y protegerlos en el refrigerador.",
+    "value": 2.0,
+    "type": "home"
+  },
+  {
+    "code": "015",
+    "name": "Frutas y Verduras",
+    "description": "Una variedad de productos frescos y saludables para tu dieta diaria.",
+    "value": 10.0,
+    "type": "food"
+  }
+]

@@ -1,0 +1,33 @@
+*{
+  margin-top: 0%;
+  padding: 0px;
+  background-color: rgba(230, 107, 107, 0); /* Hacer el fondo transparente */
+}
+
+body {
+  margin-top: 250px;
+  margin-left: 530px;
+  background-image: url(../doc/supermarket.jpg);
+  background-size: cover;
+  font-family: honk;
+  font-size: large;
+  text-transform: uppercase !important;
+}
+
+.columns {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.columns td {
+  padding: 50px;
+  border: none;
+  background-color: rgba(43, 164, 171, 0); /* transparentar el fondo */
+}
+
+/* graficas*/
+#piechart_div,
+#barchart_div {
+  width: 200px;
+  height: 300px;
+}
